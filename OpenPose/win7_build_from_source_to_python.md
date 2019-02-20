@@ -14,7 +14,7 @@ This manual is by no means complete, I just detail the steps I took to get it wo
 * CUDA for NVIDIA GPU (skip if you want to compile for CPU only)
     * [CUDA 10](https://developer.nvidia.com/cuda-toolkit)
     * [cuDNN](https://developer.nvidia.com/rdp/cudnn-download) (requires Nvidia Developer Account)  
-    to install just copy the contents into your CUDA installation directory
+    To install just copy the contents into your CUDA installation directory
 
 ## Building OpenPose from Source
 1. Clone the openpose repository to a location of your convenience  
@@ -23,7 +23,7 @@ This manual is by no means complete, I just detail the steps I took to get it wo
 1. Run CMake
     1. Where is the source code: `<repository location>` (e.g. `F:/openpose`)
     1. Where to build the binaries: `<repository location>/build` (e.g. `F:/openpose/build`)
-    1. click *Configure*
+    1. Click *Configure*
         * confirm to create build folder if it does not exist
         * set generator to your Visual Studio version
         * select `x64` as platform for generator
@@ -34,18 +34,18 @@ This manual is by no means complete, I just detail the steps I took to get it wo
             (CMake doesn't accept the Backslash Path notation)
             * set `GPU_MODE` to `CPU_ONLY` if you want to use *CPU only* mode
         * set `BUILD_PYTHON` flag
-    1. rerun *Configure*
+    1. Rerun *Configure*
         * in case of pybind11 errors
             * set `PYBIND11_INSTALL` flag
             * set `PYBIND11_PYTHON_VERSION` to 3 (not sure if this is required)
             * rerun *Configure*
-    1. click *Generate*
-    1. verify that your `<repository location>/build` folder contains the folders `x64` and `python` and the file `OpenPose.sln`
+    1. Click *Generate*
+    1. Verify that your `<repository location>/build` folder contains the folders `x64` and `python` and the file `OpenPose.sln`
 
 1. Open `OpenPose.sln` with Visual Studio
     1. Switch build configuration from `Debug` to `Release`  
     ![Visual Studio build config](vs_release.PNG)
-    2. build pyopenpose (rightclick - build)
+    2. Build pyopenpose (rightclick - build)
 
 1. To use the python module in your own projects (other than the examples)
     1. Install numpy and opencv  
