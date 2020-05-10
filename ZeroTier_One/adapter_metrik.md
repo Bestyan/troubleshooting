@@ -5,9 +5,8 @@
 
 Game Server Discovery funktioniert nicht obwohl gegenseitiges anpingen geht.
 
-
-
 ## Lösung
+
 1. Systemsteuerung
 1. Netzwerk und Internet
 1. Netzwerk- und Freigabecenter
@@ -20,3 +19,14 @@ Game Server Discovery funktioniert nicht obwohl gegenseitiges anpingen geht.
     1. Automatische Metrik &#9658; Haken rausnehmen
     1. Schnittstellenmetrik &#9658; `1`
     1. OK
+
+## Netzwerk wechseln
+
+1. altes Netzwerk deaktivieren (sonst keine auto server discovery)
+   1. rechtsklick auf ZeroTier One im Tray
+   2. Show Networks..
+   3. Haken bei *Connected* rausnehmen
+2. neues Netzwerk verbinden
+   1. rechtsklick auf ZeroTier One im Tray
+   2. Join Network..
+   3. folge den Schritten von **Lösung** zum Einstellen der Schnittstellenmetrik
